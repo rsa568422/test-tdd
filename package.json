@@ -5,7 +5,8 @@
   "author": "Roberto",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   },
   "dependencies": {
     "axios": "^0.26.1",
