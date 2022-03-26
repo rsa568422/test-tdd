@@ -9,7 +9,7 @@ const port = 3000
 app.use(parser.urlencoded({ extended: false }))
 app.use(parser.json())
 
-const postsHandlers = users({ axios })
+const postsHandlers = posts({ axios })
 
 app.post('/', authenticate, postsHandlers.post)
 

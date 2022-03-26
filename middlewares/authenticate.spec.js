@@ -2,7 +2,7 @@ const authenticate = require('./authenticate')
 describe('Middlewares', () => {
     describe('authenticate', () => {
         it('Should have id 1', () => {
-            const req = { header: jest.fn().mockReturnValue(1) }
+            const req = { header: jest.fn().mockReturnValue("1") }
             const res = { sendStatus: jest.fn() }
             const next = jest.fn()
 
@@ -14,7 +14,7 @@ describe('Middlewares', () => {
         })
 
         it('should fail if user is not the one with id 1', () => {
-            const req = { header: jest.fn().mockReturnValue(2) }
+            const req = { header: jest.fn().mockReturnValue("2") }
             const res = { sendStatus: jest.fn() }
             const next = jest.fn()
 
